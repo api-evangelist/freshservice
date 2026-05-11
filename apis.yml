@@ -1,0 +1,60 @@
+aid: freshservice
+name: Freshservice
+description: >-
+  Freshservice is Freshworks' cloud-based IT service management (ITSM) and
+  enterprise service management platform, covering ticketing, problem, change
+  and release management, asset and configuration management, and a
+  self-service portal. The Freshservice REST API provides JSON-over-HTTP
+  access to tickets, problems, changes, assets, agents, requesters, and the
+  service catalog for ITSM automation and integration.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - ITSM
+  - IT Service Management
+  - Help Desk
+  - Ticketing
+  - Asset Management
+  - Change Management
+  - Freshworks
+url: https://raw.githubusercontent.com/api-evangelist/freshservice/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: freshservice:itsm-api
+    name: Freshservice API v2
+    description: >-
+      REST API providing JSON-over-HTTP access to tickets, conversations,
+      problems, changes, releases, assets, software, agents, requesters,
+      groups, the service catalog, and approvals. Uses HTTP Basic
+      authentication with a personal API key.
+    humanURL: https://api.freshservice.com/
+    baseURL: https://<domain>.freshservice.com/api/v2
+    tags:
+      - Tickets
+      - Assets
+      - Changes
+      - Problems
+      - Service Catalog
+    properties:
+      - type: Documentation
+        url: https://api.freshservice.com/
+      - type: Developer Portal
+        url: https://developer.freshservice.com/
+common:
+  - type: Website
+    url: https://www.freshworks.com/freshservice/
+  - type: Developer Portal
+    url: https://developer.freshservice.com/
+  - type: Documentation
+    url: https://api.freshservice.com/
+  - type: Sign Up
+    url: https://www.freshworks.com/freshservice/signup/
+  - type: Pricing
+    url: https://www.freshworks.com/freshservice/pricing/
+  - type: Support
+    url: https://support.freshservice.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
