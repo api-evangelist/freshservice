@@ -43,6 +43,10 @@ apis:
       - type: Developer Portal
         url: https://developer.freshservice.com/
 common:
+  - type: GitHubOrganization
+    url: https://github.com/freshworks
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/freshservice
   - type: Website
     url: https://www.freshworks.com/freshservice/
   - type: Developer Portal
