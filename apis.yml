@@ -40,7 +40,7 @@ apis:
     properties:
       - type: Documentation
         url: https://api.freshservice.com/
-      - type: Developer Portal
+      - type: DeveloperPortal
         url: https://developer.freshservice.com/
 common:
   - type: GitHubOrganization
@@ -49,11 +49,11 @@ common:
     url: https://www.linkedin.com/company/freshservice
   - type: Website
     url: https://www.freshworks.com/freshservice/
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://developer.freshservice.com/
   - type: Documentation
     url: https://api.freshservice.com/
-  - type: SignUp
+  - type: Signup
     url: https://www.freshworks.com/freshservice/signup/
   - type: Pricing
     url: https://www.freshworks.com/freshservice/pricing/
