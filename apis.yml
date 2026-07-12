@@ -43,6 +43,14 @@ apis:
       - type: DeveloperPortal
         url: https://developer.freshservice.com/
 common:
+  - type: TrustCenter
+    url: security/freshservice-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/freshservice-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/freshservice-domain-security.yml
+  - type: Authentication
+    url: authentication/freshservice-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/freshworks
   - type: LinkedIn

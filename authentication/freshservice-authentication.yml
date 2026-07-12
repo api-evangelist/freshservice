@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/freshservice-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  description: HTTP Basic with API key as username and "X" as password.
+  sources:
+  - openapi/freshservice-openapi.yml
