@@ -43,6 +43,8 @@ apis:
       - type: DeveloperPortal
         url: https://developer.freshservice.com/
 common:
+  - type: AgenticAccess
+    url: agentic-access/freshservice-agentic-access.yml
   - type: TrustCenter
     url: security/freshservice-trust-center.yml
   - type: VulnerabilityDisclosure
