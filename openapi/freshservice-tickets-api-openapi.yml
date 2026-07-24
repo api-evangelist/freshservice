@@ -1,0 +1,117 @@
+openapi: 3.1.0
+info:
+  title: Freshservice API v2 Agents Tickets API
+  version: v2
+  description: 'Best-effort OpenAPI 3.1 description of the Freshservice ITSM REST API v2.
+
+    Generated from public documentation; not an official spec.
+
+    '
+  contact:
+    name: Freshservice Developer Portal
+    url: https://api.freshservice.com/
+servers:
+- url: https://{domain}.freshservice.com/api/v2
+  variables:
+    domain:
+      default: example
+      description: Freshservice account subdomain
+security:
+- basicAuth: []
+tags:
+- name: Tickets
+paths:
+  /tickets:
+    get:
+      tags:
+      - Tickets
+      operationId: listTickets
+      parameters:
+      - $ref: '#/components/parameters/Page'
+      - $ref: '#/components/parameters/PerPage'
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    post:
+      tags:
+      - Tickets
+      operationId: createTicket
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Object'
+      responses:
+        '201':
+          $ref: '#/components/responses/Ok'
+  /tickets/{id}:
+    parameters:
+    - $ref: '#/components/parameters/Id'
+    get:
+      tags:
+      - Tickets
+      operationId: getTicket
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    put:
+      tags:
+      - Tickets
+      operationId: updateTicket
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Object'
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    delete:
+      tags:
+      - Tickets
+      operationId: deleteTicket
+      responses:
+        '204':
+          description: No Content
+components:
+  parameters:
+    Page:
+      in: query
+      name: page
+      schema:
+        type: integer
+        default: 1
+    Id:
+      in: path
+      name: id
+      required: true
+      schema:
+        type: integer
+        format: int64
+    PerPage:
+      in: query
+      name: per_page
+      schema:
+        type: integer
+        default: 30
+        maximum: 100
+  schemas:
+    Object:
+      type: object
+      additionalProperties: true
+  responses:
+    Ok:
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Object'
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: 'HTTP Basic with API key as username and "X" as password.
+
+        '

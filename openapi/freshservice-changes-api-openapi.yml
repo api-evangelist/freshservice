@@ -1,0 +1,101 @@
+openapi: 3.1.0
+info:
+  title: Freshservice API v2 Agents Changes API
+  version: v2
+  description: 'Best-effort OpenAPI 3.1 description of the Freshservice ITSM REST API v2.
+
+    Generated from public documentation; not an official spec.
+
+    '
+  contact:
+    name: Freshservice Developer Portal
+    url: https://api.freshservice.com/
+servers:
+- url: https://{domain}.freshservice.com/api/v2
+  variables:
+    domain:
+      default: example
+      description: Freshservice account subdomain
+security:
+- basicAuth: []
+tags:
+- name: Changes
+paths:
+  /changes:
+    get:
+      tags:
+      - Changes
+      operationId: listChanges
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    post:
+      tags:
+      - Changes
+      operationId: createChange
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Object'
+      responses:
+        '201':
+          $ref: '#/components/responses/Ok'
+  /changes/{id}:
+    parameters:
+    - $ref: '#/components/parameters/Id'
+    get:
+      tags:
+      - Changes
+      operationId: getChange
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    put:
+      tags:
+      - Changes
+      operationId: updateChange
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Object'
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    delete:
+      tags:
+      - Changes
+      operationId: deleteChange
+      responses:
+        '204':
+          description: No Content
+components:
+  responses:
+    Ok:
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Object'
+  parameters:
+    Id:
+      in: path
+      name: id
+      required: true
+      schema:
+        type: integer
+        format: int64
+  schemas:
+    Object:
+      type: object
+      additionalProperties: true
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: 'HTTP Basic with API key as username and "X" as password.
+
+        '

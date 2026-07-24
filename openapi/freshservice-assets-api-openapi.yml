@@ -1,0 +1,101 @@
+openapi: 3.1.0
+info:
+  title: Freshservice API v2 Agents Assets API
+  version: v2
+  description: 'Best-effort OpenAPI 3.1 description of the Freshservice ITSM REST API v2.
+
+    Generated from public documentation; not an official spec.
+
+    '
+  contact:
+    name: Freshservice Developer Portal
+    url: https://api.freshservice.com/
+servers:
+- url: https://{domain}.freshservice.com/api/v2
+  variables:
+    domain:
+      default: example
+      description: Freshservice account subdomain
+security:
+- basicAuth: []
+tags:
+- name: Assets
+paths:
+  /assets:
+    get:
+      tags:
+      - Assets
+      operationId: listAssets
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    post:
+      tags:
+      - Assets
+      operationId: createAsset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Object'
+      responses:
+        '201':
+          $ref: '#/components/responses/Ok'
+  /assets/{id}:
+    parameters:
+    - $ref: '#/components/parameters/Id'
+    get:
+      tags:
+      - Assets
+      operationId: getAsset
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    put:
+      tags:
+      - Assets
+      operationId: updateAsset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Object'
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+    delete:
+      tags:
+      - Assets
+      operationId: deleteAsset
+      responses:
+        '204':
+          description: No Content
+components:
+  responses:
+    Ok:
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Object'
+  parameters:
+    Id:
+      in: path
+      name: id
+      required: true
+      schema:
+        type: integer
+        format: int64
+  schemas:
+    Object:
+      type: object
+      additionalProperties: true
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: 'HTTP Basic with API key as username and "X" as password.
+
+        '
