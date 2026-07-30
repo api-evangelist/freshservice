@@ -8,7 +8,19 @@ description: >-
   access to tickets, problems, changes, assets, agents, requesters, and the
   service catalog for ITSM automation and integration.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/freshservice.png
 tags:
   - ITSM
   - IT Service Management
@@ -22,26 +34,105 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: freshservice:itsm-api
-    name: Freshservice API v2
-    description: >-
-      REST API providing JSON-over-HTTP access to tickets, conversations,
-      problems, changes, releases, assets, software, agents, requesters,
-      groups, the service catalog, and approvals. Uses HTTP Basic
-      authentication with a personal API key.
-    humanURL: https://api.freshservice.com/
-    baseURL: https://<domain>.freshservice.com/api/v2
-    tags:
-      - Tickets
-      - Assets
-      - Changes
-      - Problems
-      - Service Catalog
-    properties:
-      - type: Documentation
-        url: https://api.freshservice.com/
-      - type: DeveloperPortal
-        url: https://developer.freshservice.com/
+- aid: freshservice:itsm-api
+  name: Freshservice API v2
+  description: >-
+    REST API providing JSON-over-HTTP access to tickets, conversations, problems, changes, releases, assets,
+    software, agents, requesters, groups, the service catalog, and approvals. Uses HTTP Basic authentication
+    with a personal API key.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Tickets
+  - Assets
+  - Changes
+  - Problems
+  - Service Catalog
+  properties:
+  - type: Documentation
+    url: https://api.freshservice.com/
+  - type: DeveloperPortal
+    url: https://developer.freshservice.com/
+- aid: freshservice:freshservice-agents-api
+  name: Freshservice Agents API
+  description: The Agents API from Freshservice — 2 operation(s) for agents.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Agents
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-agents-api-openapi.yml
+- aid: freshservice:freshservice-assets-api
+  name: Freshservice Assets API
+  description: The Assets API from Freshservice — 2 operation(s) for assets.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Assets
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-assets-api-openapi.yml
+- aid: freshservice:freshservice-changes-api
+  name: Freshservice Changes API
+  description: The Changes API from Freshservice — 2 operation(s) for changes.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Changes
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-changes-api-openapi.yml
+- aid: freshservice:freshservice-groups-api
+  name: Freshservice Groups API
+  description: The Groups API from Freshservice — 2 operation(s) for groups.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Groups
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-groups-api-openapi.yml
+- aid: freshservice:freshservice-problems-api
+  name: Freshservice Problems API
+  description: The Problems API from Freshservice — 2 operation(s) for problems.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Problems
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-problems-api-openapi.yml
+- aid: freshservice:freshservice-releases-api
+  name: Freshservice Releases API
+  description: The Releases API from Freshservice — 2 operation(s) for releases.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Releases
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-releases-api-openapi.yml
+- aid: freshservice:freshservice-requesters-api
+  name: Freshservice Requesters API
+  description: The Requesters API from Freshservice — 2 operation(s) for requesters.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Requesters
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-requesters-api-openapi.yml
+- aid: freshservice:freshservice-tickets-api
+  name: Freshservice Tickets API
+  description: The Tickets API from Freshservice — 2 operation(s) for tickets.
+  humanURL: https://api.freshservice.com/
+  baseURL: https://<domain>.freshservice.com/api/v2
+  tags:
+  - Tickets
+  properties:
+  - type: OpenAPI
+    url: openapi/freshservice-tickets-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/freshservice-agentic-access.yml
