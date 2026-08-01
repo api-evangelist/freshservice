@@ -1,0 +1,28 @@
+{
+  "provider": "freshservice",
+  "sources": [
+    "freshservice-agents-api-openapi.yml",
+    "freshservice-assets-api-openapi.yml",
+    "freshservice-changes-api-openapi.yml",
+    "freshservice-groups-api-openapi.yml",
+    "freshservice-problems-api-openapi.yml",
+    "freshservice-releases-api-openapi.yml",
+    "freshservice-requesters-api-openapi.yml",
+    "freshservice-tickets-api-openapi.yml"
+  ],
+  "outputs": [
+    "freshservice-agents-api-openapi.yml",
+    "freshservice-assets-api-openapi.yml",
+    "freshservice-changes-api-openapi.yml",
+    "freshservice-groups-api-openapi.yml",
+    "freshservice-problems-api-openapi.yml",
+    "freshservice-releases-api-openapi.yml",
+    "freshservice-requesters-api-openapi.yml",
+    "freshservice-tickets-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
