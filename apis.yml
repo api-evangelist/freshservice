@@ -23,6 +23,13 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/freshservice.png
 tags:
   - ITSM
+  - Help Desk
+  - Ticketing
+  - Asset Management
+  - Change Management
+  - Freshworks
+tags_raw:
+  - ITSM
   - IT Service Management
   - Help Desk
   - Ticketing
@@ -89,6 +96,8 @@ apis:
   humanURL: https://api.freshservice.com/
   baseURL: https://<domain>.freshservice.com/api/v2
   tags:
+  - Group
+  tags_raw:
   - Groups
   properties:
   - type: OpenAPI
