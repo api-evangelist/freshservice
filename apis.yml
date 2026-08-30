@@ -35,6 +35,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/freshservice.png
 tags:
   - ITSM
+  - IT Service Management
   - Help Desk
   - Ticketing
   - Asset Management
