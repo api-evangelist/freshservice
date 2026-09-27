@@ -81,6 +81,10 @@ paths:
       summary: Delete change
       x-summary-source: derived
 components:
+  schemas:
+    Object:
+      type: object
+      additionalProperties: true
   parameters:
     Id:
       in: path
@@ -89,10 +93,6 @@ components:
       schema:
         type: integer
         format: int64
-  schemas:
-    Object:
-      type: object
-      additionalProperties: true
   responses:
     Ok:
       description: Successful response
