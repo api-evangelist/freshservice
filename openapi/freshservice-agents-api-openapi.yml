@@ -81,6 +81,13 @@ paths:
       summary: Delete agent
       x-summary-source: derived
 components:
+  responses:
+    Ok:
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Object'
   schemas:
     Object:
       type: object
@@ -93,13 +100,6 @@ components:
       schema:
         type: integer
         format: int64
-  responses:
-    Ok:
-      description: Successful response
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Object'
   securitySchemes:
     basicAuth:
       type: http

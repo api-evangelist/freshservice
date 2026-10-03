@@ -84,17 +84,6 @@ paths:
       summary: Delete ticket
       x-summary-source: derived
 components:
-  schemas:
-    Object:
-      type: object
-      additionalProperties: true
-  responses:
-    Ok:
-      description: Successful response
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Object'
   parameters:
     PerPage:
       in: query
@@ -116,6 +105,17 @@ components:
       schema:
         type: integer
         default: 1
+  schemas:
+    Object:
+      type: object
+      additionalProperties: true
+  responses:
+    Ok:
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Object'
   securitySchemes:
     basicAuth:
       type: http
