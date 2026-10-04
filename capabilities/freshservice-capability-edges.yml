@@ -1,0 +1,59 @@
+slug: freshservice
+provider: Freshservice
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 5
+edges:
+- tag: Changes
+  spec_file: freshservice-changes-api-openapi.yml
+  capability_id: BC-600.30
+  capability_id_l1: BC-600
+  capability_name: IT Service Management
+  confidence: 0.9
+  evidence: 'POST /changes  createChange  Create change; vendor: ''problem, change and release management'''
+  reason: ITIL change records — squarely IT Service Management (incident, problem, change).
+- tag: Problems
+  spec_file: freshservice-problems-api-openapi.yml
+  capability_id: BC-600.30
+  capability_id_l1: BC-600
+  capability_name: IT Service Management
+  confidence: 0.9
+  evidence: POST /problems  createProblem  Create problem
+  reason: ITIL problem records in an ITSM platform — explicit match to IT Service Management (incident,
+    problem, change).
+- tag: Tickets
+  spec_file: freshservice-tickets-api-openapi.yml
+  capability_id: BC-600.30
+  capability_id_l1: BC-600
+  capability_name: IT Service Management
+  confidence: 0.9
+  evidence: '"POST /tickets createTicket Create ticket" on the "Freshservice ITSM REST API v2" — "cloud-based
+    IT service management (ITSM)" platform covering "ticketing, problem, change and release management"'
+  reason: ITSM ticketing is incident/service request handling — IT Service Management.
+- tag: Releases
+  spec_file: freshservice-releases-api-openapi.yml
+  capability_id: BC-600.30
+  capability_id_l1: BC-600
+  capability_name: IT Service Management
+  confidence: 0.8
+  evidence: 'GET /releases  listReleases  List releases; vendor: ''change and release management'''
+  reason: ITIL release records within ITSM, not software release engineering of a SaaS product; mapped
+    to IT Service Management.
+- tag: Requesters
+  spec_file: freshservice-requesters-api-openapi.yml
+  capability_id: BC-600.30
+  capability_id_l1: BC-600
+  capability_name: IT Service Management
+  confidence: 0.7
+  evidence: POST /requesters  createRequester  Create requester
+  reason: Requesters are the end-user records who raise service desk tickets; managing them underpins
+    ITSM service delivery rather than HR employee records.
