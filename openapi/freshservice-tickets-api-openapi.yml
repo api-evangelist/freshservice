@@ -84,14 +84,11 @@ paths:
       summary: Delete ticket
       x-summary-source: derived
 components:
+  schemas:
+    Object:
+      type: object
+      additionalProperties: true
   parameters:
-    PerPage:
-      in: query
-      name: per_page
-      schema:
-        type: integer
-        default: 30
-        maximum: 100
     Id:
       in: path
       name: id
@@ -99,16 +96,19 @@ components:
       schema:
         type: integer
         format: int64
+    PerPage:
+      in: query
+      name: per_page
+      schema:
+        type: integer
+        default: 30
+        maximum: 100
     Page:
       in: query
       name: page
       schema:
         type: integer
         default: 1
-  schemas:
-    Object:
-      type: object
-      additionalProperties: true
   responses:
     Ok:
       description: Successful response

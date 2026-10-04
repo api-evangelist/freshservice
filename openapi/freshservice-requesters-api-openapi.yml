@@ -81,6 +81,14 @@ paths:
       summary: Delete requester
       x-summary-source: derived
 components:
+  parameters:
+    Id:
+      in: path
+      name: id
+      required: true
+      schema:
+        type: integer
+        format: int64
   responses:
     Ok:
       description: Successful response
@@ -92,14 +100,6 @@ components:
     Object:
       type: object
       additionalProperties: true
-  parameters:
-    Id:
-      in: path
-      name: id
-      required: true
-      schema:
-        type: integer
-        format: int64
   securitySchemes:
     basicAuth:
       type: http
