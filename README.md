@@ -1,4 +1,4 @@
-# Freshservice (freshservice)
+# Freshservice
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,63 +66,124 @@
 
 Freshservice is Freshworks' cloud-based IT service management (ITSM) and enterprise service management platform, covering ticketing, problem, change and release management, asset and configuration management, and a self-service portal. The Freshservice REST API provides JSON-over-HTTP access to tickets, problems, changes, assets, agents, requesters, and the service catalog for ITSM automation and integration.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/freshservice/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/freshservice/refs/heads/main/apis.yml)
+**Areas:** ITSM · Help Desk · Ticketing · Asset Management · Change Management · Freshworks
 
-## Scope
+## Freshservice on APIs.io
 
-- **Type:** Index
+Everything profiled for Freshservice is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/freshservice/](https://apis.io/providers/freshservice/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (9)
 
-- ITSM
-- IT Service Management
-- Help Desk
-- Ticketing
-- Asset Management
-- Change Management
-- Freshworks
+- [Freshservice API v2](https://apis.io/apis/freshservice/itsm-api/) — REST API providing JSON-over-HTTP access to tickets, conversations, problems, changes, releases, assets, software, agents, requesters, groups, the service…
+- [Freshservice Agents API](https://apis.io/apis/freshservice/freshservice-agents-api/) — The Agents API from Freshservice — 2 operation(s) for agents.
+- [Freshservice Assets API](https://apis.io/apis/freshservice/freshservice-assets-api/) — The Assets API from Freshservice — 2 operation(s) for assets.
+- [Freshservice Changes API](https://apis.io/apis/freshservice/freshservice-changes-api/) — The Changes API from Freshservice — 2 operation(s) for changes.
+- [Freshservice Groups API](https://apis.io/apis/freshservice/freshservice-groups-api/) — The Groups API from Freshservice — 2 operation(s) for groups.
+- [Freshservice Problems API](https://apis.io/apis/freshservice/freshservice-problems-api/) — The Problems API from Freshservice — 2 operation(s) for problems.
+- [Freshservice Releases API](https://apis.io/apis/freshservice/freshservice-releases-api/) — The Releases API from Freshservice — 2 operation(s) for releases.
+- [Freshservice Requesters API](https://apis.io/apis/freshservice/freshservice-requesters-api/) — The Requesters API from Freshservice — 2 operation(s) for requesters.
+- [Freshservice Tickets API](https://apis.io/apis/freshservice/freshservice-tickets-api/) — The Tickets API from Freshservice — 2 operation(s) for tickets.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### Freshservice API v2
+Model Context Protocol servers that expose the API to agents.
 
-REST API providing JSON-over-HTTP access to tickets, conversations, problems, changes, releases, assets, software, agents, requesters, groups, the service catalog, and approvals. Uses HTTP Basic authentication with a personal API key.
+- [freshservice](https://apis.io/servers/freshservice/freshservice/)
 
-- **Human URL:** [https://api.freshservice.com/](https://api.freshservice.com/)
-- **Base URL:** `https://<domain>.freshservice.com/api/v2`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- Tickets
-- Assets
-- Changes
-- Problems
-- Service Catalog
+- [Freshservice Agentic Access](https://apis.io/agentic-access/freshservice/freshservice-agentic-access/)
 
-#### Properties
+#### Collections (9)
 
-- [Documentation](https://api.freshservice.com/)
-- [Developer  Portal](https://developer.freshservice.com/)
-- [Postman Collection](collections/freshservice.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/freshservice.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Freshservice API v2](https://apis.io/collections/freshservice/open-freshservice/)
+- [Freshservice API v2 Agents API](https://apis.io/collections/freshservice/open-freshservice-agents-api/)
+- [Freshservice API v2 Agents Assets API](https://apis.io/collections/freshservice/open-freshservice-assets-api/)
+- [Freshservice API v2 Agents Changes API](https://apis.io/collections/freshservice/open-freshservice-changes-api/)
+- [Freshservice API v2 Agents Groups API](https://apis.io/collections/freshservice/open-freshservice-groups-api/)
+- [Freshservice API v2 Agents Problems API](https://apis.io/collections/freshservice/open-freshservice-problems-api/)
+- [Freshservice API v2 Agents Releases API](https://apis.io/collections/freshservice/open-freshservice-releases-api/)
+- [Freshservice API v2 Agents Requesters API](https://apis.io/collections/freshservice/open-freshservice-requesters-api/)
+- [Freshservice API v2 Agents Tickets API](https://apis.io/collections/freshservice/open-freshservice-tickets-api/)
 
-- [GitHub Organization](https://github.com/freshworks)
-- [LinkedIn](https://www.linkedin.com/company/freshservice)
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Freshservice Authentication](https://apis.io/security/freshservice/freshservice-authentication/)
+- [Freshservice Domain Security](https://apis.io/security/freshservice/freshservice-domain-security/)
+- [Freshservice Trust Center](https://apis.io/security/freshservice/freshservice-trust-center/)
+- [Freshservice Vulnerability Disclosure](https://apis.io/security/freshservice/freshservice-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.freshworks.com/freshservice/)
-- [Developer  Portal](https://developer.freshservice.com/)
 - [Documentation](https://api.freshservice.com/)
-- [Sign Up](https://www.freshworks.com/freshservice/signup/)
 - [Pricing](https://www.freshworks.com/freshservice/pricing/)
 - [Support](https://support.freshservice.com/)
+- [GitHub](https://github.com/freshworks)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 34.6** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 48.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 31.6 |
+
+**Agent readiness 43.3** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 22.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/freshservice/](https://apis.io/providers/freshservice/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Freshservice: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/freshservice/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
